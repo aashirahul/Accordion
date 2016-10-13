@@ -12,7 +12,8 @@
   padding-bottom: 5px;
   font-size: 18px;
   border: 1px solid #4b5d4b;
-  background: #bce4bc; }
+  background: #bce4bc;
+  transition: background .4s; }
 
 .title:hover {
   background: #63da63; }
@@ -22,9 +23,12 @@
   overflow-y: hidden;
   width: 500px;
   margin: auto;
-  border: 1px solid #4b5d4b;
-  transition: max-height 1s; }
+  border: 1px solid #4b5d4b; }
 
 .open .para {
   max-height: 500px;
-  transition: max-height 3s; }
+  transition: max-height 3s;
+  opacity: 1; }
+
+.close .para {
+  opacity: 0; }
